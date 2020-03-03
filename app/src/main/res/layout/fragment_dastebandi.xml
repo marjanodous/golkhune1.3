@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    tools:context=".dastebandi">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backmenu">
+       <RelativeLayout
+           android:layout_width="280dp"
+           android:layout_height="100dp"
+           android:layout_marginTop="20dp"
+           android:background="@drawable/shape_back_green_name"
+           android:id="@+id/lnr_apartemani">
+           <TextView
+               android:id="@+id/txt_name_daste"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="16dp"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:text="گل های آپارتمانی"
+               android:textColor="@color/colorPrimary"
+               android:textSize="25sp"
+               android:textStyle="bold" />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/apartemani"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:layout_margin="16dp"/>
+
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lnr_apartemani"
+            android:background="@drawable/shape_back_green_name"
+            android:id="@+id/lnr_biruni">
+            <TextView
+                android:id="@+id/txt_name_biruni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="گل های بیرونی"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/biruni"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lnr_biruni"
+            android:background="@drawable/shape_back_green_name"
+            android:id="@+id/lnr_amuzesh">
+            <TextView
+                android:id="@+id/txt_name_amuzesh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="آموزش و نگهداری"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/amuzesh"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <!--<com.google.android.material.tabs.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tab"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabMode="scrollable"-->
+        <!--app:tabSelectedTextColor="@color/colorPrimaryDark"-->
+        <!--app:tabTextColor="@color/black"-->
+        <!--android:layout_gravity="top">-->
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="گل و گیاه آپارتمانی"-->
+            <!--android:icon="@drawable/apartemani" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="گل و گیاه بیرونی"-->
+            <!--android:icon="@drawable/biruni" />-->
+
+        <!--<com.google.android.material.tabs.TabItem-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="نگه داری و آموزش"-->
+            <!--android:icon="@drawable/amuzesh" />-->
+    <!--</com.google.android.material.tabs.TabLayout>-->
+    <!--<androidx.viewpager.widget.ViewPager-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/viewpager"/>-->
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about"
+    android:layoutDirection="rtl"
+    tools:context=".about">
+<TextView
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:text="@string/about"
+    android:layout_centerInParent="true"
+    android:textColor="@color/black"
+    android:textSize="13sp"
+    android:id="@+id/matn_about"
+    android:lineSpacingExtra="8dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="برنامه نویس : مائده سادات تمدنی"
+        android:textColor="@color/black"
+        android:layout_below="@id/matn_about"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/programmer"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:lineSpacingExtra="8dp"/>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="tamaddoni7794@yahoo.com"
+        android:textColor="@color/black"
+        android:layout_below="@id/programmer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/email"
+        android:layout_margin="6dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:lineSpacingExtra="8dp"/>
+</RelativeLayout>

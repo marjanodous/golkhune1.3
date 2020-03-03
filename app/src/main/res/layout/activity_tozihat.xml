@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/colorPrimary"
+    tools:context=".tozihat">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/shape_border_icon"
+                android:src="@drawable/ic_back"
+                android:layout_margin="16dp"
+                android:elevation="3dp"
+                android:id="@+id/img_back"
+                android:layout_alignParentRight="true"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_tozihat"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شرایط مراقبت"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/back_tozihat"
+                android:layout_margin="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/img_tozihat"
+
+                android:id="@+id/txt_care"/>
+            <RelativeLayout
+                android:id="@+id/lnr_name"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/txt_care"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-2dp"
+                android:background="@drawable/shape_back_green_name">
+
+                <TextView
+                    android:id="@+id/txt_name_flower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txt_care">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/shape_border_icon"
+                    android:src="@drawable/ic_water"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/logo_water"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/txt_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/logo_water"
+                    android:textColor="@color/back_tozihat"
+                    android:text=" "
+                    android:textSize="10sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="18dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/shape_border_icon"
+                    android:src="@drawable/ic_light"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/logo_light"
+                    android:layout_below="@id/logo_water"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/txt_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/logo_light"
+                    android:layout_below="@id/txt_water"
+                    android:textColor="@color/back_tozihat"
+                    android:text=" "
+                    android:textSize="10sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="18dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/shape_border_icon"
+                    android:src="@drawable/temp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/logo_temp"
+                    android:layout_below="@id/logo_light"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/txt_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/logo_temp"
+                    android:layout_below="@id/txt_light"
+                    android:textColor="@color/back_tozihat"
+                    android:text=""
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="18dp"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شرایط مراقبت"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/back_tozihat"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/lnr_name"
+                android:id="@+id/txt_title_information"/>
+            <TextView
+                android:id="@+id/txt_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text=""
+                android:textColor="@color/back_tozihat"
+                android:textSize="16sp"
+                android:lineSpacingExtra="10dp"
+                android:layout_below="@id/txt_title_information"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

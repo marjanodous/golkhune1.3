@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".az_bein_bordan_afat">
+
+    <ImageView
+        android:id="@+id/img_tozihat"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/afat"
+        android:scaleType="fitXY" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/afat_title"
+        android:layout_below="@id/img_tozihat"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_back_green_name"
+        android:textColor="@color/withe"
+        android:id="@+id/title_tozihat"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_tozihat">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/afat_matn"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_back_menu"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/back_tozihat"
+                    android:id="@+id/matn"/>
+            </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
